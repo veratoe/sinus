@@ -1,6 +1,10 @@
 var canvas = document.querySelector("canvas");
 var ctx = canvas.getContext("2d");
 
+
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
 var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
 var lx, ly; 
